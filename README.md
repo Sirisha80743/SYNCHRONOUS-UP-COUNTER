@@ -24,7 +24,7 @@ The result is a four-bit synchronous “up” counter. Each of the higher-order 
 Otherwise, the J and K inputs for that flip-flop will both be “low,” placing it into the “latch” mode where it will maintain its present output state at the next clock pulse.
 Since the first (LSB) flip-flop needs to toggle at every clock pulse, its J and K inputs are connected to Vcc or Vdd, where they will be “high” all the time.
 The next flip-flop need only “recognize” that the first flip-flop’s Q output is high to be made ready to toggle, so no AND gate is needed.
-However, the remaining flip-flops should be made ready to toggle only when all lower-order output bits are “high,” thus the need for AND gates.
+However, the remaining flip-flops should be made ready to toggle only when all lower-order output bits are “high,” thus the need for AND gates
 
 **Procedure**
 
@@ -37,6 +37,10 @@ However, the remaining flip-flops should be made ready to toggle only when all l
 4.Create nodes for inputs and outputs to generate the timing diagram.
 
 5.For different input combinations generate the timing diagram.
+
+**Truth Table**
+
+![EX 11 truth table](https://github.com/user-attachments/assets/bf61ed64-4b55-4068-b41a-bc8c2ba11529)
 
 **PROGRAM**
 
@@ -66,10 +70,7 @@ endmodule
 
 ![ex 11 wave](https://github.com/user-attachments/assets/c35211a7-b17a-4bf5-b8f5-04d7e10cb182)
 
-**TRUTH TABLE**
 
-![logic symbol and truth table](https://github.com/user-attachments/assets/2e506d63-aac6-4970-a90a-a0e0df5a9739)
+**RESULT**
 
-**RESULTS**
-
- 4 bit synchronous up counter and validate functionality is verified.
+ 4 bit Synchronous Up Counter and validate functionality is verified.
